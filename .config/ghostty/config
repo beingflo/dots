@@ -1,0 +1,49 @@
+# ── appearance ─────────────────────────────────────────────
+theme = 0x96f
+cursor-color = #FFFFFF
+cursor-style-blink = false
+font-size = 15
+macos-window-shadow = true
+split-divider-color = #F0f0f0
+macos-titlebar-style = hidden
+window-padding-x = 4
+window-padding-y = 2
+window-padding-balance = true
+
+# ── shell ──────────────────────────────────────────────────
+command = /opt/homebrew/bin/fish
+working-directory = home
+window-inherit-working-directory = false
+tab-inherit-working-directory = false
+split-inherit-working-directory = true
+
+# ── zellij passthrough ─────────────────────────────────────
+# CSI <codepoint> ; <modifiers> u
+# modifiers = 1 + (shift 1 | alt 2 | ctrl 4 | super 8)
+#   super       = 9
+#   super+shift = 10
+# codepoints: h 104  j 106  k 107  l 108  Enter 13  [ 91  ] 93
+
+# focus panes
+keybind = cmd+h=csi:104;9u
+keybind = cmd+j=csi:106;9u
+keybind = cmd+k=csi:107;9u
+keybind = cmd+l=csi:108;9u
+
+# new panes
+keybind = cmd+shift+h=csi:104;10u
+keybind = cmd+shift+j=csi:106;10u
+keybind = cmd+shift+k=csi:107;10u
+keybind = cmd+shift+l=csi:108;10u
+
+# zoom + tabs
+keybind = cmd+enter=csi:13;9u
+keybind = cmd+[=csi:91;9u
+keybind = cmd+]=csi:93;9u
+
+keybind = cmd+t=csi:116;9u
+keybind = cmd+w=csi:119;9u
+
+keybind = cmd+d=unbind
+keybind = cmd+shift+d=unbind
+keybind = cmd+shift+enter=unbind
