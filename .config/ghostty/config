@@ -41,5 +41,6 @@ keybind = cmd+t=csi:116;9u
 keybind = cmd+w=csi:119;9u
 
 keybind = cmd+d=unbind
+#keybind = cmd+c=unbind
 keybind = cmd+shift+d=unbind
 keybind = cmd+shift+enter=unbind
