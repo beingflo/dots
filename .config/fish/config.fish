@@ -22,4 +22,6 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 abbr -a cc nono run --profile nolabs-ai/claude --allow-cwd --read ~/.local/share/mise --allow /Users/fmarendi/Documents/dev/ -- claude
+abbr -a pia nono run --profile nolabs-ai/pi --allow-cwd -- pi
+
 abbr -a z zellij
