@@ -7,6 +7,7 @@ set fish_greeting
 zoxide init fish --cmd cd | source
 
 alias cat='bat --style=plain --paging=never'
+alias pia 'nono run --profile nolabs-ai/pi --allow-cwd -- pi'
 
 set -gx EDITOR nvim
 
@@ -22,6 +23,5 @@ set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
 
 abbr -a cc nono run --profile nolabs-ai/claude --allow-cwd --read ~/.local/share/mise --allow /Users/fmarendi/Documents/dev/ -- claude
-abbr -a pia nono run --profile nolabs-ai/pi --allow-cwd -- pi
 
 abbr -a z zellij
