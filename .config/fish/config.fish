@@ -11,6 +11,9 @@ alias pia 'nono run --profile nolabs-ai/pi --allow-cwd -- pi'
 
 set -gx EDITOR nvim
 
+set -gx PATH ~/.local/bin $PATH
+set -gx PATH /opt/podman/bin $PATH
+
 # CTRL+j/k for up down (arrow keys)
 bind \ck up-or-search
 bind \cj down-or-search
