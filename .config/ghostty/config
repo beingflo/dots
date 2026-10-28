@@ -5,15 +5,20 @@ font-size = 15
 macos-window-shadow = true
 split-divider-color = #F0f0f0
 
-keybind = cmd+h=goto_split:left
-keybind = cmd+l=goto_split:right
+# Tab Navigation
+keybind = cmd+h=previous_tab
+keybind = cmd+l=next_tab
 keybind = cmd+k=goto_split:up
 keybind = cmd+j=goto_split:down
 
-keybind = cmd+shift+h=new_split:left
-keybind = cmd+shift+l=new_split:right
+# Creating Tabs and Grid Splits
+keybind = cmd+shift+h=new_tab
+keybind = cmd+shift+l=new_tab
 keybind = cmd+shift+k=new_split:up
 keybind = cmd+shift+j=new_split:down
+
+# Equalize Layout Shortcut (Press this right after splitting to balance the space)
+keybind = cmd+e=equalize_splits
 
 keybind = cmd+enter=toggle_split_zoom
 
