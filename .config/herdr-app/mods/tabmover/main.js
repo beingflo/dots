@@ -1,10 +1,11 @@
 // Moves the selected tab one place left/right. Invisible: a key target only.
 // `tab.move` wants an absolute index, so a key binding can't do it alone.
 import { View, div } from "gpui-kit";
-import { nextCommand, run, spaces } from "herdr";
+import { nextCommand, panes, run, setShared, spaces } from "herdr";
 
 export default class TabMover extends View {
   init(_props, cx) {
+    setShared("probe.panes", panes().map(p => ({ t: p.terminal, title: p.title, prog: p.program && p.program.name, cwd: p.cwd })));
     cx.spawn(async (cx) => {
       for (;;) {
         this.move(await nextCommand());
