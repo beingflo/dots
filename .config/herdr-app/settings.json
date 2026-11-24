@@ -6,5 +6,8 @@
   "minimum_contrast": 1,
   "telemetry": false,
   "appearance": "dark",
-  "theme": { "light": "paper", "dark": "atom-one-soft" }
+  "theme": {
+    "light": "paper",
+    "dark": "atom-one-soft"
+  }
 }
