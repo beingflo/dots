@@ -20,11 +20,3 @@ bind \cj down-or-search
 
 # CTRL+l for accepting suggestion
 bind \cl accept-autosuggestion
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-
-abbr -a cc nono run --profile nolabs-ai/claude --allow ~/.config/jj/repos --read-file ~/.config/jj/config.toml --allow-cwd --read ~/.local/share/mise --allow /Users/fmarendi/Documents/dev/ -- claude
-
-abbr -a z zellij
